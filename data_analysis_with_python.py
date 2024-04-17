@@ -134,3 +134,18 @@ m[1, :]
 
 m[0:2, 0:3]
 # 0 dan 2ye kadar git satırlarda ,0 dan 3 e kadar git sütunlarda
+
+# FANCY INDEX
+
+import numpy as np
+
+v = np.arange(0, 30, 3)
+v
+# 0 dan 30 a kadar 3 er 3er aralıkla array oluşturur. 30 dahil değil.
+v[1]
+v[4]
+
+catch = [1, 2, 3]
+# bu indekslere sahip eleanları getirmek için aşağıdaki komutu kullanıyoruz.
+# bunu genellikle birden fazla elemanı değiştirmek istediğimizde indeksi çağırabiliriz.
+v[catch]
