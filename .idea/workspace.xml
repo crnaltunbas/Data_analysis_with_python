@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment=" NumPy Array özellikleri gösterildi.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment=" Yeniden Şekillendirme (Reshaping) gösterildi.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,13 +118,22 @@
       <option name="project" value="LOCAL" />
       <updated>1713358203499</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" Yeniden Şekillendirme (Reshaping) gösterildi.">
+      <option name="closed" value="true" />
+      <created>1713358675873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713358675873</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dosya oluşturuldu." />
     <MESSAGE value="Dosya oluşturuldu. NumPy Array-i oluşturuldu." />
     <MESSAGE value=" NumPy Array özellikleri gösterildi." />
-    <option name="LAST_COMMIT_MESSAGE" value=" NumPy Array özellikleri gösterildi." />
+    <MESSAGE value=" Yeniden Şekillendirme (Reshaping) gösterildi." />
+    <option name="LAST_COMMIT_MESSAGE" value=" Yeniden Şekillendirme (Reshaping) gösterildi." />
   </component>
 </project>

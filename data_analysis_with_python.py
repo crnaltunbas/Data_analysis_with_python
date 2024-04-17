@@ -104,3 +104,33 @@ ar.reshape(3, 3)
 ar = np.random.randint(1, 10, size=10)
 ar.reshape(3, 3)
 
+#  INDEX SEÇİMİ (INDEX SELECTİON)
+
+import numpy as np
+a = np.random.randint(10, size=10)
+a
+a[0]
+a[0:5]
+# şurdan şuraya kadar git 0 dahil,5 hariç bunada slicing denir.
+
+a[0] = 100
+#  0 indeksindeki elemanı değiştirmemizi sağlar.
+
+m = np.random.randint(10, size=(3, 5))
+m[0, 0]
+# ilk kısım satırı ikinci kısım sütunu ifade etmektedir. 0. satır0.sütun.
+
+m[2, 3] = 999
+
+m[2, 3] = 2.9
+# girdiğimiz veri tipi float olup normalde m int veri sakladığından veriyi integer a çevirip ekleme yapar bu da numpy-ın
+# tek veri tipinde saklama yapıp verimli veri sakladığını gösterir.
+
+m[:, 0]
+# bütün satırları seçip 0. indeksteki sütunu seçer
+
+m[1, :]
+# 1.satırı seçip bütün sütunları seçer.
+
+m[0:2, 0:3]
+# 0 dan 2ye kadar git satırlarda ,0 dan 3 e kadar git sütunlarda
