@@ -170,3 +170,44 @@ v[v > 3]
 v[v != 3]
 v[v == 3]
 v[v >= 3]
+
+# Matematiksel İşlemler (Mathematical Operations)
+
+import numpy as np
+v = np.array([1, 2, 3, 4, 5])
+# Operatörler aracılığı ile gerçekleştirelim.
+v /5
+v * 5 / 10
+v ** 2
+v - 1
+
+# Metodlar aracılığı ile gerçekleştirirsek.
+
+np.subtract(v, 1)
+# çıkarma işlemi için metotdur.
+np.add(v, 1)
+# toplama işlemi için metotdur.
+np.mean(v)
+# ortalamasını almak için metotdur.
+np.sum(v)
+# tüm elemanları toplayan metotdur.
+np.min(v)
+# min elemanını bulan metotdur.
+np.max(v)
+# max elemanını bulan metotdur.
+np.var(v)
+# varyans bulan metotdur.
+
+# NumPy ile İki Bilinmeyenli Denklem Çözümü
+# 5*x0 + x1 = 12
+# x0 + 3*x1 = 10
+# Aşağıdaki metotlar kullanılarak çözüm bulunabilir.
+
+a = np.array([[5, 1], [1, 3]])
+b = np.array([12, 10])
+np.linalg.solve(a, b)
+
+#  Neden NumPy?
+#  Hızından dolayı yani sabit tipte veri tipi sakladığından dolayı bu hız kazandırır.
+#  Fonksiyonel, vektörel, yüksek düzeyde bize kolaylık sağlamasıdır.
+

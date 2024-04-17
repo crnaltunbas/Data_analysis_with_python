@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Fancy Index açıklandı.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -142,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713367572534</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı.">
+      <option name="closed" value="true" />
+      <created>1713378313356</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713378313356</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,6 +160,7 @@
     <MESSAGE value=" Yeniden Şekillendirme (Reshaping) gösterildi." />
     <MESSAGE value="Index işlemleri gösterildi." />
     <MESSAGE value="Fancy Index açıklandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fancy Index açıklandı." />
+    <MESSAGE value="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı." />
   </component>
 </project>
