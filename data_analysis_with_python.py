@@ -68,4 +68,24 @@ np.random.randint(0, 10, size=10)
 
 np.random.normal(10, 4, (3, 4))
 
+#  NumPy Array Özellikleri (Attributes of NumPy Arrays)
+
+import numpy as np
+
+# ndim: boyut sayısı
+# shape: boyut bilgisi
+# size: toplam eleman sayısı
+# dtype: array veri tipi
+
+a = np.random.randint(10, size=5)
+# burada 0 dan 10 a kadar yazmadım ama fonksiyon otomatik olarak öyle algılayacak.
+a.ndim
+# tek boyutlu olduğu için 1 geldi.
+a.shape
+# (5,) çıktısı geldi tek boyutlu ve içerisinde 5 tane eleman var bilgisiniz verdi. Eğer iki boyut olsaydı her boyuttaki
+# eleman sayısı gelecekti.
+a.size
+# toplam eleman sayısını verdi 5 çıktısı geldi
+a.dtype
+# veri tipini verdi int32 veri tipindeymiş int 64 te olabilirdi.
 
