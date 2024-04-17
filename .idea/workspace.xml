@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713378313356</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü.">
+      <option name="closed" value="true" />
+      <created>1713380237904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713380237904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,6 +169,7 @@
     <MESSAGE value="Index işlemleri gösterildi." />
     <MESSAGE value="Fancy Index açıklandı." />
     <MESSAGE value="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı." />
+    <MESSAGE value="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü." />
+    <option name="LAST_COMMIT_MESSAGE" value="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü." />
   </component>
 </project>

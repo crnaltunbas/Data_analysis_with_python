@@ -211,3 +211,46 @@ np.linalg.solve(a, b)
 #  Hızından dolayı yani sabit tipte veri tipi sakladığından dolayı bu hız kazandırır.
 #  Fonksiyonel, vektörel, yüksek düzeyde bize kolaylık sağlamasıdır.
 
+
+# PANDAS
+# Veri Manipülasyonu ya da veri analizi dendiğinde akla gelen ilk python kütüphanelerinden biridir. Öncelikle
+# ekonometrik ve finansal çalışmalar için doğmuş daha sonra veri analitiği dendiğinde en sık kullanılan kütüphaneler
+# haline gelmiştir. Temeli 2008 de atılmıştı. Bir çok veri yapısı ile çalışma imkanı sunmaktadır, bir çok farklı
+# kaynaklardan veri okuma imkanına sahiptir.
+
+# Pandas Series
+# Veri Okuma (Reading Data)
+# Veriye Hızlı Bakış (Quick look at Data)
+# Pandas'ta Seçim İşlemleri (Selection in Pandas)
+# Toplulaştırma ve Gruplama (Aggregation & Grouping)
+# Apply ve Lambda
+# Birleştirme (Join) İşlemleri
+
+
+#  Pandas Series
+import pandas as pd
+
+s = pd.Series([10, 77, 12, 4, 5])
+# Pandas serisinde indeks göstermek bir iç özelliktir. Bu özellik ekonometri ve zaman serisi ihtiyacı için ortaya çıkmış
+# Dolayısıyla zamana bağlı seriler diziler oladuğundan dolayı  gelen çıktı gibi bir indeks bilgimiz var.
+
+type(s)
+# s değişkeninin ne tipte veri olduğunu söyler.
+s.index
+# çıktısı  RangeIndex(start=0, stop=5, step=1) olur, bu da 0 dan başlayıp 5-e kadar 1 artarak indekslenir anlamındadır.
+# 5 harici
+s.dtype
+# içerisindeki verinin tip bilgisini verir.
+s.size
+# içerisindeki eleman sayısı
+s.ndim
+# boyutunu verir.
+s.values
+# s-in elemanlarına erişmek için kullanılır. Bu metot yani values eklemesi yapıldıktan sonra indekslerle
+# ilgilenmediğimiz için gelen çıktı numpy array tipindedir.
+type(s.values)
+s.head()
+s.head(3)
+# Baştan 3 tanesini getirir.
+s.tail(3)
+# sondan 3 tanesini getirir.
