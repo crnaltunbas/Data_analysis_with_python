@@ -149,3 +149,24 @@ catch = [1, 2, 3]
 # bu indekslere sahip eleanları getirmek için aşağıdaki komutu kullanıyoruz.
 # bunu genellikle birden fazla elemanı değiştirmek istediğimizde indeksi çağırabiliriz.
 v[catch]
+
+# NumPy da Koşullu işlemler(Conditions on Numpy)
+
+import numpy as np
+v = np.array([1, 2, 3, 4, 5])
+
+# Amaç array içerisinde 3-ten küçük elemanlara erişmek
+
+# Klasik Döngü ile
+ab = []
+for i in v:
+     if i < 3:
+          ab.append(i)
+
+# NumPy ile
+
+v[v < 3]
+v[v > 3]
+v[v != 3]
+v[v == 3]
+v[v >= 3]
