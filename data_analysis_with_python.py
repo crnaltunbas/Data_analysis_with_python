@@ -89,3 +89,18 @@ a.size
 a.dtype
 # veri tipini verdi int32 veri tipindeymiş int 64 te olabilirdi.
 
+
+# Yeniden Şekillendirme (Reshaping)
+
+import numpy as np
+
+np.random.randint(1, 10, size=9)
+# bunu bir matrise veya iki boyutlu bir array-e  çevirmek istiyorum. reshape metodunu kullanarak yapabiliriz.
+np.random.randint(1, 10, size=9).reshape(3, 3)
+# YADA
+ar = np.random.randint(1, 10, size=9)
+ar.reshape(3, 3)
+# ANCAK BU ÇEVİRMEDE SİZE GÖZÖNÜNE ALINMALIDIR.
+ar = np.random.randint(1, 10, size=10)
+ar.reshape(3, 3)
+
