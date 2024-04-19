@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Veri okuma gösterildi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -174,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713545397142</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Veri okuma gösterildi">
+      <option name="closed" value="true" />
+      <created>1713547957294</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713547957294</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Veri okuma gösterildi">
+      <option name="closed" value="true" />
+      <created>1713547977951</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713547977951</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +204,7 @@
     <MESSAGE value="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü." />
     <MESSAGE value="Pandas Series anlatılıp gerekli metotlar gösterilmiştir." />
     <MESSAGE value="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak." />
-    <option name="LAST_COMMIT_MESSAGE" value="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak." />
+    <MESSAGE value="Veri okuma gösterildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Veri okuma gösterildi" />
   </component>
 </project>

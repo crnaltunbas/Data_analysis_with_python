@@ -272,7 +272,42 @@ df.head()
 # Pandas  cheatsheet araması ile pandas kütüphanesinde kullanılan bütün metotları fonksiyonları derli toplu bir şekilde
 # bulabilirsiniz.
 
+#  Veriye Hızlı Bakış (Quck look at Data)
+
 import seaborn as sns
+import pandas as pd
 
 
+# Seaborn kütüphanesinin içerisindeki bu metot ben seabornun içindakı bazı yaygın verileri koydum, siz bunlarla kolayca
+# çalışın, anlamına gelmektedir. Biz bu veri setlerine aşağıdaki gibi erişim sağlayabilriz.
 
+df = sns.load_dataset("titanic")
+df.head()
+# head metoduyla veriye hızlı bir göz attık.
+df.tail()
+# tail ile sondan değerlere göz attık.
+df.shape
+# shape ile boyut bilgisini öğrenmiş olduk.
+df.info()
+# değişkenlerle alakalı bilgileri bize verir, hangi veri tipine sahip olduğunu ne kadarı dolu ,ne kadarı eksik bilgiye
+# sahip bunlar hakkında bize bilgi verir. Burada değişken tiplerinde object ve category değişken tipleride bizim için
+# kategorik değişkenlerdir. Genel olarak object veri tipleride kategorik değişkenlerdir.
+df.columns
+#  bir data frame-in direkt değişkenlerine ulaşmak için columns metodunu kullanabiliriz.
+df.index
+# İndeks bilgilerini verir. nerden başlayıp nereyekadar devam ettiğini ve kaçar kaçar arttığını bize söylemektedir.
+df.describe()
+# Elimizdeki bir data frame-in hızlı bir şekilde istatistik bilgilerine erişmek istiyorsak describe metodunu kullanırız .
+# Ancak daha okunabilir olması açısından aşağıdaki yöntemi uygulayarak daha rahat okunabilir
+df.describe().T
+# Buradaki T kısmını transpozunu almak gibi düşünebiliriz.
+df.isnull().values.any()
+# Bu metot aslında değişkenlerin herhangi birisinde boşluk yani eksiklik var mı anlamındadır.Çıktıyı boolean tipinde
+# vermektedir. True veya False olarak.
+df.isnull().sum()
+# Değişkenlerde bir eksiklik durumu var mı bunu öğrenebilmek için yukarıdaki metot kullanılır. Hangi değişkende kaç tane
+# var ihtiyacını karşılamaktadır.
+df["sex"].value_counts()
+#  Bu metot herhangi bir kategorik değişkenin içerisinde kaç tane sınıf var bunlar neler ve bu kategorik sınıflardan
+#  hangisine ne kadar sahipiz bunu öğrenmek için kullanırız.Biz örnek olarak cinsiyet için uyguladık ve kadın erkek için
+#  kaç veriye sahip bunu gösterdi.
