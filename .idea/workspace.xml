@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -158,7 +158,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713380237904</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Pandas Series anlatılıp gerekli metotlar gösterilmiştir.">
+      <option name="closed" value="true" />
+      <created>1713382562404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713382562404</updated>
+    </task>
+    <task id="LOCAL-00010" summary="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak.">
+      <option name="closed" value="true" />
+      <created>1713545397142</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713545397142</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +186,8 @@
     <MESSAGE value="Fancy Index açıklandı." />
     <MESSAGE value="NumPy üzerinde koşullu işlemler ve klasik döngü arasındaki kolaylık açıklandı." />
     <MESSAGE value="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü." />
-    <option name="LAST_COMMIT_MESSAGE" value="NumPy ile matematiksel işlemler yapıldı ve iki bilinmeyenli denklemler çözüldü." />
+    <MESSAGE value="Pandas Series anlatılıp gerekli metotlar gösterilmiştir." />
+    <MESSAGE value="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak." />
+    <option name="LAST_COMMIT_MESSAGE" value="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak." />
   </component>
 </project>

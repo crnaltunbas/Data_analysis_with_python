@@ -254,3 +254,25 @@ s.head(3)
 # Baştan 3 tanesini getirir.
 s.tail(3)
 # sondan 3 tanesini getirir.
+
+
+# Veri Okuma (Reading Data)
+
+#  Pandas bir çok farklı tipteki veriyi kolay bir şekilde okuma imkanı sağlar. İçerisinde bulunan metotlar aracılığıyla
+#  csv ,txt, excel ya da  diğer bazı özel dosya formatlarını okuyabilir ve üzerinde çalışabilirsiniz.
+#  Datasets oluşturulduktan sonra csv dosyası kaydedildi ve  aşağıda da nasıl okunacağını göstereceğiz.
+
+import pandas as pd
+df = pd.read_csv("datasets/advertising.csv")
+df.head()
+# Burada pd.read kısmında pd üzerine gelip ctrl- ye tıklayıp dökümanı açtıktan sonra ctrl+f diyoruz ve csv dosyası
+# haricinde read_ dediiğimizde kullanabileceğimiz metotlar gelir.Bu metotlar farklı formatlarda klasörlere uygulanacak
+# olanlardır. Eğer burada kullanmak istediğimiz bir metot var ve bunun nasıl kullanabileceğimiz bulmak için istediğimiz
+# metodun üstüne gelip tıklıyoruz. docstring kısmında fonksiyonların detaylarını görebiliriz.
+# Pandas  cheatsheet araması ile pandas kütüphanesinde kullanılan bütün metotları fonksiyonları derli toplu bir şekilde
+# bulabilirsiniz.
+
+import seaborn as sns
+
+
+
