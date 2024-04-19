@@ -311,3 +311,49 @@ df["sex"].value_counts()
 #  Bu metot herhangi bir kategorik değişkenin içerisinde kaç tane sınıf var bunlar neler ve bu kategorik sınıflardan
 #  hangisine ne kadar sahipiz bunu öğrenmek için kullanırız.Biz örnek olarak cinsiyet için uyguladık ve kadın erkek için
 #  kaç veriye sahip bunu gösterdi.
+
+#  Pandas'ta Seçim İşlemleri (Selection in Pandas)
+import pandas as pd
+import seaborn as sns
+df = sns.load_dataset("titanic")
+df.head()
+
+df.index
+# indeks bbilgilerine ulaştık
+df[0:15]
+# slicing işlemi yapıldı.
+df.drop(0, axis=0).head()
+# indekslere bağlı olarak satırlardan mı sütunlardan mı bir şey silmek istediğimizi bildirdik ve gözlemleyebilmek için
+# head metodunu kullandık. Biz yukarıda satır sildik. Eğer burada birden fazla indekse göre silme işlemi yaparsak
+# aşağıdaki gibi bir yol izlemeliyiz.
+df.drop(delete_indexes, axis=0).head(10)
+delete_indexes = [1, 3, 5, 7]
+
+# yukarıdaki silme işlemi kalıcı değildir ancak kalıcı hale getirmek için aşağıdaki yöntemleri kulanabiliriz.
+# df = df.drop(delete_indexes, axis=0)
+# df.drop(delete_indexes, axis=0, inplace=True)
+
+# Değişkeni İndex'e Çevirmek
+
+df["age"].head()
+df.age.head()
+
+df.index = df["age"]
+
+# Burada aslında yapılmak istenen bir değişkenin yerine diğer değişkeni taşımak yani indeksi yaşla değiştirmek gibi
+
+df.drop("age", axis=1, inplace=True)
+# son yapılan komutlada age kolonu silindi ve indeks kısmındada yaş veileri yer almaktadır.
+
+# İndex' i Değişkene Çevirmek
+# 1. YOL
+df.index
+df["age"] = df.index
+df.head()
+# yaş verileri öncesinde silindiği için yeni değişken olarak eklendi
+# Şimdi yaş değişkenini tekrar silip 2. yolu görelim.
+df.drop("age", axis=1, inplace=True)
+# 2. YOL
+df.reset_index().head()
+# indekste yer alan değeri silecektir, sildiği değeri sütun olarak ekleyecektir.
+df = df.reset_index()

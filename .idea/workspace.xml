@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Veri okuma gösterildi">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Veriye hızlı bakış sağlandı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -190,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713547977951</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Veriye hızlı bakış sağlandı.">
+      <option name="closed" value="true" />
+      <created>1713551588731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713551588731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,6 +213,7 @@
     <MESSAGE value="Pandas Series anlatılıp gerekli metotlar gösterilmiştir." />
     <MESSAGE value="datasets dosyası oluşturulup altında csv dosyası kaydedildi.Bir sonraki committe bu dosyanın okunması sağlanacak." />
     <MESSAGE value="Veri okuma gösterildi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Veri okuma gösterildi" />
+    <MESSAGE value="Veriye hızlı bakış sağlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Veriye hızlı bakış sağlandı." />
   </component>
 </project>
