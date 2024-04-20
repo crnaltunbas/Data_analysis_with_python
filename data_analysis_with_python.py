@@ -400,3 +400,32 @@ df.loc[:, df.columns.str.contains("age")].head()
 df.loc[:,~df.columns.str.contains("age")].head()
 # Buradaki loc data frame lerde seçme işlemimiz  gerçekleştirmek için kullandığımız bir yapıdır.
 
+# iloc & loc
+
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+df = sns.load_dataset("titanic")
+df.head()
+# iloc data frame lerde indeks bilgisi vererek seçim yapma işlemleridir. Açlımıda integer based selection dır.
+# loc ise mutlak olarak indekslerdeki label lara göre seçim yapar.açılımı label based selectiondır
+
+# iloc : integer based selection
+# 0 dan 3 e kadar olan elemanları seçtik.
+df.iloc[0:3]
+# 0. satır 0. sütundaki elemanı seç getir
+df.iloc[0, 0]
+
+# loc : label based selection
+df.loc[0:3]
+
+# loc ve ilocta yazdığımız aynı şeylerin çıktı olarak farklearı loc-ta dediğimiz gibi mutlak olarak 0,1,2,3
+# indekslerindeki elemanların hepsini çıktıya verir. iloc- ta ise 0-dan 3-e kadar alıştığımız anlayış vardır.
+# Yani loc isimlendirmenin kendisini seçiyor.
+
+df.iloc[0:3, "age"]
+# BU KOMUT HATA VERİR ÇÜNKÜ BİZİM ASLINDA PARANTEZ İÇERİSİNDE 0:, 0:3 YAZMAMIZI BEKLİYOR AMA BİZ DEĞİŞKENİN KENDİ ASIL
+# İSMİNDE SEÇİM YAPMAK İSTİYORSAK LOC KULLANMALIYIZ
+df.loc[0:3, "age"]
+col_names = ["age", "embarked", "alive"]
+df.loc[0:3, col_names]
