@@ -510,3 +510,27 @@ df.groupby(["sex", "embark_town"]).agg({
      "sex": "count"})
 
 
+# Pivot Table
+
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+df = sns.load_dataset("titanic")
+df.head()
+
+df.pivot_table("survived", "sex", "embarked", aggfunc="std")
+
+df.pivot_table("survived", "sex", ["embarked", "class"])
+
+df.head()
+
+# sayısalbir değişkeni kategorik bir değişkene çevirirken çevirecek olduğumuz sınıfları tanımlayabiliyoruz.
+# Burada çevirirken cut fonksiyonu kullanmalıyız. Ancak tanımlayamazsak qcut fonksiyonu tanımlamalıyız. Çünkü değerleri
+# küçükten büyüğe sıralar ve yüzdelik çeyrek değerlerine göre bunları  gruplara kategorilere böler. Çok yaygın bir
+# şekilde kullanılır.
+
+df["new_age"] = pd.cut(df["age"],[0, 10, 18, 25, 40, 90])
+
+df.pivot_table("survived", "sex", ["new_age", "class"])
+# çıktılar bölük bir şekilde konsolda gözükeceğinden aşağıdaki komutu kullanabiliriz.
+pd.set_option('display.width', 500)
