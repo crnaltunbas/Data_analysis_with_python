@@ -326,7 +326,7 @@ df.drop(0, axis=0).head()
 # indekslere bağlı olarak satırlardan mı sütunlardan mı bir şey silmek istediğimizi bildirdik ve gözlemleyebilmek için
 # head metodunu kullandık. Biz yukarıda satır sildik. Eğer burada birden fazla indekse göre silme işlemi yaparsak
 # aşağıdaki gibi bir yol izlemeliyiz.
-df.drop(delete_indexes, axis=0).head(10)
+df.drop("delete_indexes", axis=0).head(10)
 delete_indexes = [1, 3, 5, 7]
 
 # yukarıdaki silme işlemi kalıcı değildir ancak kalıcı hale getirmek için aşağıdaki yöntemleri kulanabiliriz.
@@ -357,3 +357,46 @@ df.drop("age", axis=1, inplace=True)
 df.reset_index().head()
 # indekste yer alan değeri silecektir, sildiği değeri sütun olarak ekleyecektir.
 df = df.reset_index()
+
+
+#  Değişkenler Üzerinde İşlemler
+
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+# Bu komut değişkenler yani sütunlar arasındaki 3 noktayı kaldırır. Direkt bütün kolonları sıralar.
+df = sns.load_dataset("titanic")
+
+# Aşağıdaki komut istediğimiz herhangi bir değişkenin dataframe-in içinde var mı yok mu bunu öğrenmemizi sağlar.
+"age" in df
+# Eğer bir değişkeni seçmek istersekte aşağıdaki komutlar kullanılır.
+df["age"].head()
+df.age.head()
+type(df["age"].head())
+# Bu type komutunun çıktısı pandas Series olacağından dolayı bir değişken seçerken sonucunu seri ya da data frame olması
+# için aşağıdaki gibi iki köşeli parantez kullanılırsa data frame değişmez ve veri yapımız bozulmaz eğer iki köşeli
+# parantez kullanılmazsa veri yapımız bozulup pandas series olacağından dolayı herhangi bir değişken seçip fonksiyonu
+# uyguladığımız zaman hata alırız.
+df[["age"]].head()
+type(df[["age"]].head())
+
+df[["age", "alive"]]
+col_names = ["age", "adult_male", "alive"]
+df[col_names]
+
+# Aşağıda yeni değişkenler ekledik.
+df["age2"] = df["age"]**2
+df["age3"] = df["age"] / df["age2"]
+
+# Aşağıda kalıcı olarak değişken sildik.
+df.drop("age3", axis=1, inplace=True)
+df.drop(col_names, axis=1).head()
+
+#  mesela yüzlerce belirli bir ifadeyi barındıran değişkenlere nasıl erişicez veya nasıl seçip nasıl silicez diye
+#  düşünebiliriz
+df.loc[:, df.columns.str.contains("age")].head()
+# Yukarıdaki komutta bütün satırları seçip sütunlardada age string ifadesini barındıran değişkenleri seç dedik. Eğer bu
+# ifadeyi barındıranların dışındaki sütunlları yani değişkenleri ver deseydik, aşağıdaki gibi ~ eklemesi yapmalıydık
+df.loc[:,~df.columns.str.contains("age")].head()
+# Buradaki loc data frame lerde seçme işlemimiz  gerçekleştirmek için kullandığımız bir yapıdır.
+
