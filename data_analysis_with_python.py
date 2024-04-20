@@ -534,3 +534,64 @@ df["new_age"] = pd.cut(df["age"],[0, 10, 18, 25, 40, 90])
 df.pivot_table("survived", "sex", ["new_age", "class"])
 # çıktılar bölük bir şekilde konsolda gözükeceğinden aşağıdaki komutu kullanabiliriz.
 pd.set_option('display.width', 500)
+
+
+# Apply ve Lambda
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+df = sns.load_dataset("titanic")
+pd.set_option('display.width', 500)
+df.head()
+
+# Apply ile satır ya da sütunlarda istediğimiz fonksiyonları uygulayabiliriz.
+# Lambda kullan at fonksiyondur
+
+df["age2"] = df["age"]*2
+df["age3"] = df["age"]*5
+
+# Aşağıda biz bütün age ifadesni içeren değişkenleri 10 bölmek istiyoruz. Bunun için yöntemler
+
+# 1. yöntem
+(df["age"]/10).head()
+(df["age2"]/10).head()
+(df["age3"]/10).head()
+
+# 2. yöntem
+for col in df.columns:
+     if "age" in col:
+          print((df[col]/10).head())
+
+# 3. yöntem
+for col in df.columns:
+     if "age" in col:
+          df[col] = df[col]/10
+
+df.head()
+
+# 4. yöntem apply & lambda uygulayarak
+
+df[["age", "age2", "age3"]].apply(lambda x: x/10).head()
+
+# YA DA
+
+df.loc[:, df.columns.str.contains("age")].apply(lambda x: x/10).head()
+
+# Başka bir fonksiyon
+df.loc[:, df.columns.str.contains("age")].apply(lambda x: (x - x.mean()) / x.std()).head()
+
+# Yukarıdaki fonksiyonu bir başka bir deyişle
+
+def standart_scaler(col_name):
+     return (col_name - col_name.mean()) / col_name.std()
+
+df.loc[:, df.columns.str.contains("age")].apply(standart_scaler).head()
+
+# Apply fonksiyonu satırlarda veya sütunlarda elimizdeki belirli bir fonksiyonu bu satır ya da sütunlara uygulama imkanı
+# sağlar.Aşağıda bu yaptıklarımızı kalıcı hale getirmiş oluruz.
+
+# df.loc[:, df.columns.str.contains("age")] = df.loc[:, df.columns.str.contains("age")].apply(standart_scaler).head()
+# YA DA
+# df.loc[:, ["age", "age2", "age3"]] = df.loc[:, df.columns.str.contains("age")].apply(standart_scaler).head()
+
+

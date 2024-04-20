@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Toplulaştırma ve Gruplaştırma anatıldı.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Pivot Table anlatıldı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -238,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713639889564</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Pivot Table anlatıldı.">
+      <option name="closed" value="true" />
+      <created>1713643166833</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713643166833</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,6 +267,7 @@
     <MESSAGE value="loc &amp; iloc" />
     <MESSAGE value="Koşullu Seçim anlatıldı." />
     <MESSAGE value="Toplulaştırma ve Gruplaştırma anatıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Toplulaştırma ve Gruplaştırma anatıldı." />
+    <MESSAGE value="Pivot Table anlatıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pivot Table anlatıldı." />
   </component>
 </project>
