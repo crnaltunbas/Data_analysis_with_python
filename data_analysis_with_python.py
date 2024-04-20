@@ -472,3 +472,41 @@ df_new = df.loc[(df["age"] > 50)
 df_new["embark_town"].value_counts()
 
 
+# Toplulaştırma & Gruplaştırma(Aggretion & Grouping)
+# Toplulaştırma bize özet istatistikleri veren fonksiyonlardır.
+# count
+# first
+# last
+# mean
+# median
+# min
+# max
+# std
+# var
+# sum
+# pivot table
+
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+df = sns.load_dataset("titanic")
+df.head()
+
+df["age"].mean()
+# Direkt yaş ortalamasını bulduk.
+
+df.groupby("sex")["age"].mean()
+#  Buradada cinsiyete göre yaş ortalaması bulundu ve gruplaştırma yapılmış oldu.
+
+df.groupby("sex").agg({"age": "mean"})
+df.groupby("sex").agg({"age": ["mean", "sum"]})
+
+df.groupby(["sex", "embark_town"]).agg({"age": ["mean"],
+                       "survived": "mean"})
+
+df.groupby(["sex", "embark_town"]).agg({
+     "age": ["mean"],
+     "survived": "mean",
+     "sex": "count"})
+
+

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="loc &amp; iloc">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Koşullu Seçim anlatıldı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python.py" afterDir="false" />
     </list>
@@ -222,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713617203619</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Koşullu Seçim anlatıldı.">
+      <option name="closed" value="true" />
+      <created>1713637640051</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713637640051</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,6 +249,7 @@
     <MESSAGE value="Pandas- ta seçim işlemleri yapıldı." />
     <MESSAGE value="Değişkenler üzerinde işlemler anlatıldı." />
     <MESSAGE value="loc &amp; iloc" />
-    <option name="LAST_COMMIT_MESSAGE" value="loc &amp; iloc" />
+    <MESSAGE value="Koşullu Seçim anlatıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Koşullu Seçim anlatıldı." />
   </component>
 </project>
