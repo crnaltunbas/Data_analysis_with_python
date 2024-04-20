@@ -429,3 +429,46 @@ df.iloc[0:3, "age"]
 df.loc[0:3, "age"]
 col_names = ["age", "embarked", "alive"]
 df.loc[0:3, col_names]
+
+# Koşullu Seçim (Conditonal Selection)
+import pandas as pd
+import seaborn as sns
+pd.set_option('display.max_columns', None)
+df = sns.load_dataset("titanic")
+df.head()
+
+df[df["age"] > 50].head(5)
+# Yaşı 50 den büyük olanları gösterir.
+df[df["age"] > 50].count()
+# Yaşı 50 den büyük olanları saydı yani hangisinde kaç tane yaşı 50 den büyük olanlar var diye
+df[df["age"] > 50]["age"].count()
+# Bu komuttaki gibi değişken seçimi yaparsak sadece onu sayar
+
+df.loc[df["age"] > 50, "class"].head()
+# Biz yaşı elliden büyük olanların hangi sınıfta olduklarını öğrenmek istersekbu komutu uygulayabiliriz.
+df.loc[df["age"] > 50, ["age","class"]].head()
+#  biz yaşı elliden büyük olanların hangi sınıfta olduğunu ayrıca yaşlarının ne olduğunu görmek için bu komutu
+#  kullanmamız gerekir
+df.loc[(df["age"] > 50 )& (df["sex"] == "male"), ["age", "class"]].head()
+# Aynı anda hem elliden büyük hemde erkek olanların hem yaşını hemde sınıfını göster dedik yani iki şart olduğundan
+# şartları parantez içerisine aldık.
+df.loc[(df["age"] > 50) & (df["sex"] == "male") & (df["embark_town"] == "Cherbourg"), ["age", "class", "embark_town"]].head()
+# Bir başka şart daha eklediğimizde & bağlacı ekleyip yeni şartımızı ekledik ve bu şartı sağlayanların yaşını sınıfını
+# ve bindikleri yerleri yazdırtmasını istedik. Bu yukarıdaki aynı kodu bir başka düzende yazabiliriz.
+# Bunu aşağıdaki gibi yapabiliriz.
+df.loc[(df["age"] > 50)
+       & (df["sex"] == "male")
+       & (df["embark_town"] == "Cherbourg"),
+       ["age", "class", "embark_town"]].head()
+# Ya da aşağıdaki gibi embark_town kısmında yeni bir şart ekleyerek yeni bir komut oluşturabiliriz. Ancak önce bir
+# embark_town değişkeninde kaç sınıf, tür var bunu öğrenelim
+df["embark_town"].value_counts()
+
+df_new = df.loc[(df["age"] > 50)
+       & (df["sex"] == "male")
+       & ((df["embark_town"] == "Cherbourg") | (df["embark_town"] == "Southampton")),
+       ["age", "class", "embark_town"]]
+
+df_new["embark_town"].value_counts()
+
+
