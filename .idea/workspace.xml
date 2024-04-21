@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Sayısal Veri Görselleştirme yapıldı.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Matplotlib özellikleri anlatıldı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis_with_python_data_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python_data_visualization.py" afterDir="false" />
     </list>
@@ -294,7 +294,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713700413554</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Matplotlib özellikleri anlatıldı.">
+      <option name="closed" value="true" />
+      <created>1713712586867</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713712586867</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Matplotlib özellikleri anlatıldı.">
+      <option name="closed" value="true" />
+      <created>1713718464384</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713718464384</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -321,6 +337,7 @@
     <MESSAGE value="Rename" />
     <MESSAGE value="Kategorik Görselleştirme yapıldı." />
     <MESSAGE value="Sayısal Veri Görselleştirme yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sayısal Veri Görselleştirme yapıldı." />
+    <MESSAGE value="Matplotlib özellikleri anlatıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Matplotlib özellikleri anlatıldı." />
   </component>
 </project>
