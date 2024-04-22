@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Matplotlib özellikleri anlatıldı.">
+    <list default="true" id="f6e9eca1-6311-448b-adca-772502fccee4" name="Changes" comment="Kategorik Değişken Analizi yapıldı.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_analysis_with_python_data_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis_with_python_data_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advanced_functional_eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced_functional_eda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,12 +310,34 @@
       <option name="project" value="LOCAL" />
       <updated>1713718464384</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Seaborn ile veri görselleştirme anlatıldı.">
+      <option name="closed" value="true" />
+      <created>1713719322486</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713719322486</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Dosya oluşturuldu.">
+      <option name="closed" value="true" />
+      <created>1713719914764</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713719914764</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Kategorik Değişken Analizi yapıldı.">
+      <option name="closed" value="true" />
+      <created>1713721684098</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713721684098</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dosya oluşturuldu." />
-    <MESSAGE value="Dosya oluşturuldu. NumPy Array-i oluşturuldu." />
     <MESSAGE value=" NumPy Array özellikleri gösterildi." />
     <MESSAGE value=" Yeniden Şekillendirme (Reshaping) gösterildi." />
     <MESSAGE value="Index işlemleri gösterildi." />
@@ -338,6 +360,9 @@
     <MESSAGE value="Kategorik Görselleştirme yapıldı." />
     <MESSAGE value="Sayısal Veri Görselleştirme yapıldı." />
     <MESSAGE value="Matplotlib özellikleri anlatıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Matplotlib özellikleri anlatıldı." />
+    <MESSAGE value="Seaborn ile veri görselleştirme anlatıldı." />
+    <MESSAGE value="Dosya oluşturuldu." />
+    <MESSAGE value="Kategorik Değişken Analizi yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kategorik Değişken Analizi yapıldı." />
   </component>
 </project>
